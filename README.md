@@ -66,7 +66,7 @@ omni_wheel_car/
 │   │   └── Inc/
 │   ├── CMakeLists.txt
 │   ├── CMakePresets.json
-│   └── allways_online.ioc       CubeMX 工程文件
+│   └── omni_wheel_car.ioc       CubeMX 工程文件
 └── esp32_remote/                ESP32-C3 遥控固件（PlatformIO + Arduino）
     ├── src/main.cpp             WiFi AP + 网页摇杆 + UART 发送
     ├── platformio.ini
@@ -144,7 +144,7 @@ cmake --build --preset Debug
 烧录用 `.vscode/tasks.json` 里的任务（ST-Link / DAP-Link），或 OpenOCD：
 
 ```bash
-openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c "program build/Debug/allways_online.elf verify reset exit"
+openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c "program build/Debug/omni_wheel_car.elf verify reset exit"
 ```
 
 ### ESP32-C3

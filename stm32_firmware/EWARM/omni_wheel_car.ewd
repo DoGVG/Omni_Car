@@ -2,7 +2,7 @@
 <project>
 	<fileVersion>3</fileVersion>
 	<configuration>
-		<name>allways_online</name>
+		<name>omni_wheel_car</name>
 		<toolchain>
 			<name>ARM</name>
 		</toolchain>
