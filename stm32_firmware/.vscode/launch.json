@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (ST-Link)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/allways_online.elf",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "searchDir": [
+                "D:/vs-stm32-toolchain/OpenOCD-20260302-0.12.0/share/openocd/scripts"
+            ],
+            "gdbPath": "C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-gdb.exe",
+            "device": "STM32F407VE",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "构建",
+            "showDevDebugOutput": "none"
+        },
+        {
+            "name": "Debug (DAP-Link)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/allways_online.elf",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "searchDir": [
+                "D:/vs-stm32-toolchain/OpenOCD-20260302-0.12.0/share/openocd/scripts"
+            ],
+            "gdbPath": "C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-gdb.exe",
+            "device": "STM32F407VE",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "构建",
+            "showDevDebugOutput": "none"
+        }
+    ]
+}

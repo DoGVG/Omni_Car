@@ -1,0 +1,20 @@
+{
+    "cmake.useCMakePresets": "always",
+    "cmake.configureOnOpen": true,
+    "cmake.configureOnEdit": false,
+    "cmake.saveBeforeBuild": true,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.intelliSenseEngine": "default",
+    "files.associations": {
+        "*.ioc": "ini",
+        "*.ld": "linkerscript"
+    },
+    "files.exclude": {
+        "build": true,
+        "EWARM": true
+    },
+    "python.analysis.stubPath": "C:\\Users\\kod\\.kendryte\\k230_canmv_pylance\\37ce52eed76c219f\\typings",
+    "python.analysis.extraPaths": [
+        "C:\\Users\\kod\\.kendryte\\k230_canmv_stubs\\ef72564650b53101827b5750b76d115dd3b5e36d"
+    ]
+}
